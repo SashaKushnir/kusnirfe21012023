@@ -1,31 +1,16 @@
 import './App.css';
 import {Widget} from "./components/widget/Widget";
-import {UsersListPage} from "./models/usersList/UsersListPage";
-import {useState} from "react";
-import {UserItemPage} from "./models/userItem/UserItemPage";
+import {Provider} from "react-redux";
+import {store} from "./store";
 
-function App() {
-
-    const [currentlyOpenedPage, setCurrentlyOpenedPage] = useState('list')
-
-    const getCurrentPage = () => {
-        switch (currentlyOpenedPage) {
-            case 'list':
-                return <UsersListPage setCurrentlyOpenedPage={setCurrentlyOpenedPage}/>
-            case 'item':
-                return <UserItemPage setCurrentlyOpenedPage={setCurrentlyOpenedPage}/>
-            default:
-                return <div>Unknown Page</div>
-        }
-    }
+export const App = () => {
 
     return (
-        <div className="App">
-            <Widget>
-                {getCurrentPage()}
-            </Widget>
-        </div>
+        <Provider store={store}>
+            <div className="App">
+                <Widget/>
+            </div>
+        </Provider>
+
     );
 }
-
-export default App;

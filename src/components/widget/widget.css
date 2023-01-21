@@ -1,0 +1,10 @@
+.widgetWrap {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 30%;
+    height: 35%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    overflow: auto;
+}

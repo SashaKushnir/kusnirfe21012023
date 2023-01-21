@@ -1,3 +1,68 @@
 .userItemWrapper {
-
+    border-bottom: 1px solid gainsboro;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.usersListWrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 75%;
+}
+
+.viewAllButtonWrap {
+    padding: 15px 10px;
+    height: 25%;
+}
+
+.viewUserButton {
+    width: auto;
+    padding: 5px 10px;
+    height: 30px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.viewUserButtonWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.viewAllButton {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.usersPhoto {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.userInfoWrap {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.namesWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.userListNickname {
+    font-weight: 400;
+    color: darkblue;
+}
+.userListName {
+    font-weight: bolder;
+}
+
+

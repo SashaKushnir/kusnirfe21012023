@@ -1,0 +1,49 @@
+.userDetailsWrap {
+    position: relative;
+}
+.tagRemove::before {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    content: 'x';
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.userPhoto {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.userPhotoWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid gainsboro;
+    padding: 20px;
+}
+.userDetailsName {
+    font-weight: bolder;
+    font-size: 24px;
+}
+.userDetailsPosition{
+    font-weight: bold;
+    font-size: 24px;
+    color: gainsboro;
+}
+.detailsWrap {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailsWrap>div {
+    display: flex;
+}
+.label{
+    width: 80px;
+    font-weight: bold;
+}
